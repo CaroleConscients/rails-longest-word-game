@@ -1,0 +1,15 @@
+<h1>Welcome to the longest word-game</h1>
+
+  <h2>Here is your grid :</h2>
+    <p> <%= @grid %></p>
+    <p>.............................</p>
+
+  <h2>Write your guess</h2>
+    <form action="/score" method="get">
+    <input type="text" id="guess" name="guess" placeholder="Your guess">
+    <input type="submit" value="Process !">
+    <input type="hidden" id="grid" name="grid" placeholder="Your guess" value="<%= @grid %>">
+    </form>
+
+
+
